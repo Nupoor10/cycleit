@@ -1,0 +1,17 @@
+.challenges__page__container {
+    background-color: #f1ffeb;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.challenges__page__container > div {
+    margin: 20px;
+}
+
+.challenges__div__container {
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 

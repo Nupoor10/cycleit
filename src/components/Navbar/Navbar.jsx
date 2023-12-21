@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaCircleUser } from "react-icons/fa6";
 import { HiOutlineLogout } from "react-icons/hi";
@@ -10,8 +10,7 @@ import './Navbar.css'
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
     const [showUserDropdown, setShowUserDropdown] = useState(false)
-    const navigate = useNavigate()
-    const { dispatch } = useAuthContext();
+    const { user, dispatch } = useAuthContext();
   
     const handleShowNavbar = () => {
       setShowNavbar(!showNavbar)
@@ -22,8 +21,9 @@ const Navbar = () => {
     };
 
     const handleLogout = () => {
+      console.log("Logged");
       dispatch({ type: "LOGOUT" });
-      navigate("/");
+      window.location.href = '/';
     };
 
     const navlinks = [
