@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg2"
+    sodipodi:docname="Nuevo documento 1"
+    viewBox="0 0 282.35 288.01"
+    version="1.1"
+    inkscape:version="0.48.3.1 r9886"
+  >
+  <defs
+      id="defs4"
+    >
+    <filter
+        id="filter3788"
+        inkscape:collect="always"
+        color-interpolation-filters="sRGB"
+      >
+      <feGaussianBlur
+          id="feGaussianBlur3790"
+          stdDeviation="1.4617457"
+          inkscape:collect="always"
+      />
+    </filter
+    >
+  </defs
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="27"
+      fit-margin-left="0"
+      pagecolor="#ffffff"
+      fit-margin-top="0"
+      inkscape:window-maximized="1"
+      inkscape:zoom="1.4"
+      inkscape:window-x="0"
+      inkscape:window-height="709"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="104.23332"
+      inkscape:cy="129.5878"
+      fit-margin-right="0"
+      fit-margin-bottom="0"
+      inkscape:window-width="1366"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Capa 1"
+      inkscape:groupmode="layer"
+      transform="translate(-204.33 -371.28)"
+    >
+    <path
+        id="path2996"
+        sodipodi:nodetypes="cccccccc"
+        style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3.7987;fill:#9fbb06"
+        inkscape:connector-curvature="0"
+        d="m457.65 547.29-43.883-17.303c-8.8111 17.506-15.402 35.526-56.172 45.632 0.30329-10.165 2.5779-23.308-0.92203-27.73-15.745 18.489-31.953 36.525-78.973 24.412 19.563 53.547 56.951 70.49 100.42 74.941-5.3595-6.1044-10.624-12.32-13.925-20.851 56.343-14.269 80.867-43.819 93.454-79.102z"
+    />
+    <path
+        id="path3766"
+        d="m337.06 383.67 5.9937 46.789c19.585-0.71905 38.55-3.6314 67.058 27.217-9.0526 4.6346-21.664 8.9772-23.851 14.175 23.789 4.8819 47.404 10.388 59.458 57.424 37.485-42.953 34.306-83.877 17.251-124.11-2.7647 7.6383-5.6726 15.248-11.556 22.251-39.663-42.486-77.374-49.728-114.35-43.748z"
+        sodipodi:nodetypes="cccccccc"
+        style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3.7987;fill:#9fbb06"
+        inkscape:connector-curvature="0"
+    />
+    <path
+        id="path3768"
+        sodipodi:nodetypes="cccccccc"
+        style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3.7987;fill:#9fbb06"
+        inkscape:connector-curvature="0"
+        d="m259.67 574.65 37.164-29.05c-10.621-16.471-22.812-31.288-10.851-71.553 8.6081 5.4156 18.783 14.04 24.368 13.265-7.9532-22.946-15.281-46.061 19-80.447-56.073-10.288-89.633 13.347-115.51 48.557 7.979-1.5244 16.006-2.9108 25.033-1.4296-16.268 55.799-3.2332 91.919 20.796 120.66z"
+    />
+    <path
+        id="path3770"
+        style="stroke-linejoin:round;filter:url(#filter3788);stroke:#006900;stroke-linecap:round;stroke-width:2.5;fill:none"
+        d="m385.07 546.5-17.328-6.8326c-3.4792 6.9125-6.0816 14.028-22.18 18.019 0.11976-4.014 1.0179-9.2036-0.36408-10.95-6.2172 7.3008-12.617 14.423-31.184 9.6397 7.7249 21.144 22.488 27.834 39.653 29.592-2.1163-2.4104-4.1953-4.8648-5.4983-8.2336 22.248-5.6345 31.932-17.303 36.902-31.235z"
+        sodipodi:nodetypes="cccccccc"
+        inkscape:connector-curvature="0"
+        transform="matrix(2.5325 0 0 2.5325 -515.73 -836.71)"
+    />
+    <path
+        id="path3792"
+        style="stroke-linejoin:round;filter:url(#filter3788);stroke:#006900;stroke-linecap:round;stroke-width:2.5;fill:none"
+        d="m340.43 506.14-17.328-6.8326c-3.4792 6.9125-6.0816 14.028-22.18 18.019 0.11976-4.014 1.0179-9.2036-0.36408-10.95-6.2172 7.3008-12.617 14.423-31.184 9.6397 7.7249 21.144 22.488 27.834 39.653 29.592-2.1163-2.4104-4.1953-4.8648-5.4983-8.2336 22.248-5.6345 31.932-17.303 36.902-31.235z"
+        sodipodi:nodetypes="cccccccc"
+        inkscape:connector-curvature="0"
+        transform="matrix(-1.2958 2.1759 -2.1759 -1.2958 1804 489.32)"
+    />
+    <path
+        id="path3794"
+        style="stroke-linejoin:round;filter:url(#filter3788);stroke:#006900;stroke-linecap:round;stroke-width:2.5;fill:none"
+        d="m340.43 506.14-17.328-6.8326c-3.4792 6.9125-6.0816 14.028-22.18 18.019 0.11976-4.014 1.0179-9.2036-0.36408-10.95-6.2172 7.3008-12.617 14.423-31.184 9.6397 7.7249 21.144 22.488 27.834 39.653 29.592-2.1163-2.4104-4.1953-4.8648-5.4983-8.2336 22.248-5.6345 31.932-17.303 36.902-31.235z"
+        sodipodi:nodetypes="cccccccc"
+        transform="matrix(-1.1948 -2.2329 2.2329 -1.1948 -386 1749.8)"
+        inkscape:connector-curvature="0"
+    />
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Recycle</dc:title
+        >
+        <dc:date
+          >2012-07-24T17:30:09</dc:date
+        >
+        <dc:description
+          >Ã­cono de reciclaje</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/171292/recycle-by-developingo-171292</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >developingo</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >reciclar</rdf:li
+            >
+            <rdf:li
+              >recycle</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
