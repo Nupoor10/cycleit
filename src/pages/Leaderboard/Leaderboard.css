@@ -1,0 +1,66 @@
+.leaderboard__page__container {
+    padding: 10px;
+    background-color: #f1ffeb;
+}
+
+.leaderboard__page__container table {
+    border: 1px solid #f0f8ff;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 20px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .leaderboard__page__container table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  .leaderboard__page__container table tr {
+    background-color: #f0f8ff;
+    border: 1px solid #d5d5d5;
+    padding: .35em;
+  }
+  
+  .leaderboard__page__container table th,
+  .leaderboard__page__container table td {
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .leaderboard__page__container table th {
+    font-size: 18px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  #rank span {
+    background-color: #5d0069;
+    border-radius: 50%;
+    color: rgb(250, 250, 250);
+    padding: 15px;
+    font-weight: bolder;
+  }
+
+  #user span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  #user img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid darkblue
+  }
+
+  #points span {
+    background-color: darkblue;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+  }

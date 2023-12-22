@@ -30,6 +30,7 @@ const Navbar = () => {
         {name: 'Challenges', path: '/challenge'},
         {name: 'Recycle', path: '/recycle'},
         {name: 'History', path: '/history'},
+        {name: 'Leaderboard', path: '/leaderboard'},
         {name: 'Scan', path: '/scan'}
     ]
   
