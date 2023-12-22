@@ -19,7 +19,6 @@ const Leaderboard = () => {
                 }
               };
               const response = await axios.get(`${apiURL}/user/leaderboard`, config);
-              console.log(response);
               if (response && response.status === 200 && response.data.data) {
                 setLeaderboardStats(response.data.data);
               }
@@ -35,8 +34,8 @@ const Leaderboard = () => {
 
   return (
     <div className='leaderboard__page__container'>
+      <h1>Leaderboard 🏆</h1>
         <table>
-            <caption>Leaderboard</caption>
             <thead>
                 <tr>
                 <th scope="col">Rank</th>
@@ -45,12 +44,10 @@ const Leaderboard = () => {
                 </tr>
             </thead> 
             <tbody>
-                {console.log(leaderboardStats)}
                 {leaderboardStats.length > 0 && leaderboardStats.map((item, index) => {
                     return (<tr key={index}>
-                        {console.log(item)}
-                        <td id='rank'><span>🏅{item?.rank}</span></td>
-                        <td id='user'><span><img src='https://i.ibb.co/XJMxTWF/Smiling-Girl-Black-for-T-Shirt1.png' alt='user_avatar'></img> &nbsp; {item?.user}</span></td>
+                        <td id='rank'><span>🏅{index + 1}</span></td>
+                        <td id='user'><span><img src='https://i.ibb.co/XJMxTWF/Smiling-Girl-Black-for-T-Shirt1.png' alt='user_avatar'></img> &nbsp; {item?.username}</span></td>
                         <td id='points'><span>🌟{item?.totalPoints}</span></td>
                     </tr>)
                 })}

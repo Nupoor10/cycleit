@@ -8,6 +8,7 @@ import Modal from '../../components/Modal/Modal';
 import BadgeCard from '../../components/BadgeCard/BadgeCard';
 import BadgeInfo from '../../components/BadgeInfo/BadgeInfo';
 import ChallengeCard from '../../components/ChallengeCard/ChallengeCard';
+import UserCharts from '../../components/UserCharts/UserCharts';
 import "./Profile.css";
 const apiURL = import.meta.env.VITE_BACKEND_URL;
 
@@ -36,7 +37,6 @@ const Profile = () => {
               }
             };
             const response = await axios.get(`${apiURL}/user/stats`, config);
-            console.log(response);
             if (response && response.status === 200 && response.data.data) {
               setUserStats(response.data.data);
             }
@@ -76,8 +76,9 @@ const Profile = () => {
   return (
     <div className='profile__page__container'>
         <div className='profile__headline margin'>
-            <h1>Welcome, User 🥷</h1>
-            <p>Turn every action into a green victory, start now!</p>
+          <h1>Welcome, {user?.name} 🥷</h1>
+          <p>Turn every action into a green victory, start now!</p>
+          <UserCharts />
         </div>
         <div className='margin'>
           <button className='primary__btn' onClick={() => {navigate("/recycle")}}>Start Recycling ♻️</button>

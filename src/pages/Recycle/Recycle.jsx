@@ -56,7 +56,7 @@ const Recycle = () => {
 
   return (
     <div className="recycle__page__container">
-      <h1>Find Recycling Centres near You!</h1>
+      <h1>Find Recycling Centres near You 📌</h1>
       <p>Enter your city in the format below : Paris, France</p>
       <div className="search__area">
         <input type="text" placeholder="Enter City" value={city} onChange={(e) => setCity(e.target.value)} />
@@ -78,7 +78,7 @@ const Recycle = () => {
             </Marker>
           ))}
       </MapContainer>
-      ) : "Enter a City to View Map"}
+      ) : <img src="https://i.ibb.co/92L8xNC/image-2.png"/>}
       
     </div>
   );

@@ -1,0 +1,20 @@
+.history__page__container {
+    background-color: #f1ffeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.history__page__container > h1 {
+    margin: 10px;
+}
+
+.history__card {
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: -5px 5px 0 0 rgba(65,117,5,1), -10px 10px 0 0 rgba(65,117,5,0.6), -15px 15px 0 0 rgba(65,117,5,0.4), -20px 20px 0 0 rgba(65,117,5,0.2), -25px 25px 0 0 rgba(65,117,5,0.1);
+}

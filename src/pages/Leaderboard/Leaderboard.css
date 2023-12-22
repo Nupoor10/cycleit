@@ -1,6 +1,7 @@
 .leaderboard__page__container {
-    padding: 10px;
+    padding: 20px;
     background-color: #f1ffeb;
+    text-align: center;
 }
 
 .leaderboard__page__container table {
@@ -9,8 +10,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    border-radius: 20px;
-   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
   
   .leaderboard__page__container table caption {

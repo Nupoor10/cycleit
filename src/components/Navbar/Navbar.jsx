@@ -21,7 +21,6 @@ const Navbar = () => {
     };
 
     const handleLogout = () => {
-      console.log("Logged");
       dispatch({ type: "LOGOUT" });
       window.location.href = '/';
     };

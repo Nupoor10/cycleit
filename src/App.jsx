@@ -7,6 +7,8 @@ import Profile from './pages/Profile/Profile';
 import Challenges from './pages/Challenges/Challenges';
 import Recycle from './pages/Recycle/Recycle';
 import Leaderboard from './pages/Leaderboard/Leaderboard';
+import AddRecycle from './pages/AddRecycle/AddRecycle';
+import History from './pages/History/History';
 import Navbar from "./components/Navbar/Navbar";
 import Footer from './components/Footer/Footer';
 import { useAuthContext } from './hooks/useAuthContext';
@@ -25,6 +27,8 @@ function App() {
         <Route path='/challenge' element={<Challenges />}/>
         <Route path='/recycle' element={<Recycle />}/>
         <Route path='/leaderboard' element={<Leaderboard />}/>
+        <Route path='/history' element={<History />}/>
+        <Route path='/scan' element={<AddRecycle />}/>
       </Routes>
       <Footer />
       <Toaster position='top-center'/>
