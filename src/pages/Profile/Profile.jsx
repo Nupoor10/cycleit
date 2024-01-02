@@ -9,6 +9,7 @@ import BadgeCard from '../../components/BadgeCard/BadgeCard';
 import BadgeInfo from '../../components/BadgeInfo/BadgeInfo';
 import ChallengeCard from '../../components/ChallengeCard/ChallengeCard';
 import UserCharts from '../../components/UserCharts/UserCharts';
+import DonationCard from '../../components/DonationCard/DonationCard';
 import "./Profile.css";
 const apiURL = import.meta.env.VITE_BACKEND_URL;
 
@@ -18,6 +19,8 @@ const Profile = () => {
     const [userStats, setUserStats] = useState([]);
     const [userChallenges, setUserChallenges] = useState([]);
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [myDonations, setMyDonations] = useState(null);
+    const [donationInfo, setDonationInfo] = useState([]);
   
     const openModal = () => {
       setModalIsOpen(true);
@@ -73,6 +76,52 @@ const Profile = () => {
       fetchData();
     }, [user]);
 
+    useEffect(() => {
+      const fetchData = async() => {
+          try {
+              if(user) {
+                const config = {
+                  headers: {
+                    Authorization: `Bearer ${user?.accessToken}`,
+                  },
+                };
+                const response = await axios.get(`${apiURL}/donation/created/`, config);
+                if(response && response.status == 200) {
+                  setMyDonations(response.data.data);
+                }
+              }
+            } catch(error) {
+              console.log(error);
+              toast.error(error?.message);
+            }
+      }
+  
+      fetchData()
+    }, [user])
+
+    useEffect(() => {
+      const fetchData = async() => {
+          try {
+              if(user) {
+                const config = {
+                  headers: {
+                    Authorization: `Bearer ${user?.accessToken}`,
+                  },
+                };
+                const response = await axios.get(`${apiURL}/userdonation/all`, config);
+                if(response && response.status == 200) {
+                  setDonationInfo(response.data.data);
+                }
+              }
+            } catch(error) {
+              console.log(error);
+              toast.error(error?.message);
+            }
+      }
+  
+      fetchData()
+    }, [user])
+
   return (
     <div className='profile__page__container'>
         <div className='profile__headline margin'>
@@ -106,6 +155,28 @@ const Profile = () => {
                 return <ChallengeCard key={index} title={item.challenge.title} description={item.challenge.description} difficultyLevel={item.challenge.difficultyLevel} points={item.challenge.points} id={item._id} isEnrolled={true} isCompleted={item.completed}/>
               }) : "You haven't enrolled in any challenges yet.Explore Below !!"}
           </div>
+        </div>
+        <div className='margin'>
+          <h1>Your Donations</h1>
+          <button className='primary__btn' onClick={() => {navigate("/donate")}}>Explore Donations 🎁</button>
+          <div className='user__donations'>
+            {donationInfo?.map((item, index) => {
+            return (
+              <div  key={index}>
+                <h1>{item?.donation?.title}</h1>
+                <h2>You donated: Rs.{item?.amount}💸</h2>
+                <p>You helped raise {(item?.amount / item?.donation?.goalAmount) * 100} % of the goal amount 💪🏼</p>
+              </div>
+              )
+            })}
+          </div>
+        </div>
+        <div className='margin'>
+          <h1>Your Campaigns </h1>
+          <button className='primary__btn' onClick={() => {navigate("/create")}}>Create Campaign 💹</button>
+          <div className='donations__wrapper'>{myDonations?.map((item) => {
+          return <DonationCard key={item._id} id={item._id} title={item?.title} description={item.description} goalAmount={item.goalAmount} amountRaised={item.amountRaised} organizer={item.organizer} isOrganizer={true}/>
+          })}</div>
         </div>
         <Modal isOpen={modalIsOpen} closeModal={closeModal} 
         children={<BadgeInfo />}/>

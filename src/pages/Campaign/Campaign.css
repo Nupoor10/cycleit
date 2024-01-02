@@ -1,0 +1,30 @@
+.campaign__page__container {
+    background-color: #f1ffeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.campaign__page__container p {
+    font-size: 22px;
+}
+
+.campaign__page__container input {
+    display: block;
+    margin: 20px 0px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    outline: 2px solid #1899D6;
+    border: none;
+}
+
+.campaign__page__container input:focus {
+    outline: 4px solid #012739;
+}
+
+.warning {
+    color: red;
+}

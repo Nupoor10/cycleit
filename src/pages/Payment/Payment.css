@@ -1,0 +1,13 @@
+#payment-form {
+    background-color: #f1ffeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#payment-form > p, #payment-form > div {
+    width: 100%;
+}

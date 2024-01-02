@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import './Recycle.css'
 const apiKey = import.meta.env.VITE_GEOAPIFY_KEY;
@@ -10,6 +11,7 @@ const Recycle = () => {
   const [position, setPosition] = useState([]);
   const [city, setCity] = useState('');
   const [points, setPoints] = useState([]);
+  const navigate = useNavigate("/");
 
   const geocodeCity = async () => {
     try {
@@ -48,9 +50,13 @@ const Recycle = () => {
   };
 
   const getPlaces = async () => {
-    const placeID = await geocodeCity();
-    if (placeID) {
-      await fetchRecyclingCenters(placeID);
+    if(position?.length === 2) {
+      window.location.reload();
+    } else {
+      const placeID = await geocodeCity();
+      if (placeID) {
+        await fetchRecyclingCenters(placeID);
+      }
     }
   };
 
@@ -60,7 +66,7 @@ const Recycle = () => {
       <p>Enter your city in the format below : Paris, France</p>
       <div className="search__area">
         <input type="text" placeholder="Enter City" value={city} onChange={(e) => setCity(e.target.value)} />
-        <button className="secondary__btn" onClick={getPlaces}>Search</button>
+        <button className="secondary__btn" onClick={getPlaces}>{position?.length > 0 ? "Refresh" : "Search"}</button>
       </div>
       {(position.length === 2) ? (
         <MapContainer id="map" center={[position[0], position[1]]} zoom={12} scrollWheelZoom={false}>

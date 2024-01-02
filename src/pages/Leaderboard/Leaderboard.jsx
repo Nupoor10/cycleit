@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import toast from 'react-hot-toast';
 import axios from 'axios';
-import { useAuthContext } from '../../hooks/useAuthContext';
+import { useAuthContext } from '../../hooks/useAuthContext'; 
 import './Leaderboard.css'
 const apiURL = import.meta.env.VITE_BACKEND_URL;
 
@@ -48,7 +48,7 @@ const Leaderboard = () => {
                     return (<tr key={index}>
                         <td id='rank'><span>🏅{index + 1}</span></td>
                         <td id='user'><span><img src='https://i.ibb.co/XJMxTWF/Smiling-Girl-Black-for-T-Shirt1.png' alt='user_avatar'></img> &nbsp; {item?.username}</span></td>
-                        <td id='points'><span>🌟{item?.totalPoints}</span></td>
+                        <td id='points'><span>🌟{item?.totalPoints || 0}</span></td>
                     </tr>)
                 })}
             </tbody>
