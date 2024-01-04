@@ -13,7 +13,8 @@ const Footer = () => {
             </p>
         </div>
         <div className='footer__links'>
-          <a style={{color: 'white'}} target='_blank' rel='noreferrer' href='https://github.com/Nupoor10'><AiFillGithub /></a>
+          <a style={{color: 'white'}} target='_blank' rel='noreferrer' href='https://github.com/Nupoor10/cycleit'><AiFillGithub /></a>
+          <a style={{color: 'white'}} target='_blank' rel='noreferrer' href='https://github.com/Nupoor10/cycleit-backend'><AiFillGithub /></a>
           <a style={{color: 'white'}} target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/nupoor-shetye-8452111a7/'><AiFillLinkedin /></a>
           <a style={{color: 'white', textDecoration: 'none'}} target='_blank' rel='noreferrer' href='https://peerlist.io/nupoor'>🅿️</a>
         </div>
