@@ -4,7 +4,7 @@
   <img src="https://res.cloudinary.com/du9wkwhju/image/upload/v1704029634/logo_pr1i5l.png" height="250px">
 </p>
 
-<b>This is the frontend repo of the cycleit project, the backend repo can be found [here](https://github.com/Nupoor10/cycleit-backend.git)</b>
+<b>This is the frontend repo of the cycleit project, the backend repo can be found [here](https://github.com/Nupoor10/cycleit-backend)</b>
 
 ## Table Of Contents
 
@@ -20,8 +20,8 @@
 
 ## Demo and Links
 
-- Link to frontend repo can be found [here](https://github.com/Nupoor10/cycleit.git)
-- Link to backend repo can be found [here](https://github.com/Nupoor10/cycleit-backend.git)
+- Link to frontend repo can be found [here](https://github.com/Nupoor10/cycleit)
+- Link to backend repo can be found [here](https://github.com/Nupoor10/cycleit-backend)
 - Link to online demo can be found [here](https://cycleit.vercel.app/)
 
 ## About
